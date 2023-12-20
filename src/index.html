@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+      @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Oswald', sans-serif;
+        background-color: black;
+      }
+
+      .desc {
+        position: absolute;
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .btn,
+      .btn2 {
+        font-family: 'Alegreya Sans SC', sans-serif;
+        display: none;
+        outline: 1px solid #000000;
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+        border-radius: 3px;
+        background-color: white;
+        transition: background-color 0.3s ease;
+        border: none;
+      }
+
+      .btn:hover {
+        background-color: rgb(210, 210, 210);
+      }
+
+      .btn2 {
+        outline: 1px solid #ffffff;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+
+      .btn2:hover {
+        background-color: rgb(60, 60, 60);
+      }
+
+      .nav {
+        font-size: 35px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 10px 20px 10px 20px;
+      }
+
+      .nav:hover {
+        background-color: rgba(255, 255, 255, 0.103);
+      }
+
+      .selected {
+        border-bottom: white 2px solid;
+      }
+
+      .buttons {
+        margin: auto;
+      }
+
+      .white-0 {
+        margin-left: -1px;
+        margin-top: 4px;
+      }
+
+      .white-1 {
+        margin-left: -5px;
+        margin-top: 3px;
+      }
+
+      .white-2 {
+        margin-left: -6px;
+        margin-top: 2px;
+      }
+
+      .white-3 {
+        margin-top: 1px;
+        margin-left: -6px;
+      }
+
+      .white-4 {
+        margin-left: -4px;
+      }
+
+      .white-6 {
+        margin-left: 2px;
+      }
+
+      .white-7 {
+        margin-left: -4px;
+      }
+
+      .white-8 {
+        margin-left: -1px;
+      }
+
+      .white-10 {
+        margin-left: -3px;
+      }
+
+      .white-11 {
+        margin-top: 1px;
+        margin-left: -2px;
+      }
+
+      .white-12 {
+        margin-top: 2px;
+        margin-left: -1px;
+      }
+
+      .white-13 {
+        margin-top: 3px;
+        margin-left: 3px;
+      }
+
+      .black-0 {
+        margin-top: 5px;
+        margin-left: -10px;
+      }
+
+      .black-1 {
+        margin-top: 3px;
+        margin-left: -11px;
+      }
+
+      .black-3 {
+        margin-top: 5px;
+        margin-left: -6px;
+      }
+
+      .black-4 {
+        margin-top: 3px;
+        margin-left: -5px;
+      }
+
+      .black-5 {
+        margin-top: 1px;
+        margin-left: -3px;
+      }
+
+      .black-7 {
+        margin-top: 4px;
+        margin-left: -1px;
+      }
+
+      .black-8 {
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="desc">
+      <button id="offBtn" class="nav selected">PLAY</button>
+      <button id="onBtn" class="nav">SET KEYBINDS</button>
+    </div>
+    <div class="buttons" id="buttons"></div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
